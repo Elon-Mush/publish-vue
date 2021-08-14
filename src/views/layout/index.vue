@@ -27,7 +27,7 @@
             }"
             @click="isCollapse = !isCollapse"
           ></i>
-          <span>江苏传智播客科技教育有限公司</span>
+          <span>一个后台管理系统</span>
         </div>
         <el-dropdown>
           <div class="avatar-wrap">

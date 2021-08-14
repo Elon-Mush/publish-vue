@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <h1>粉丝管理</h1>
+    <h1>开发中。。。</h1>
   </div>
 </template>
 
