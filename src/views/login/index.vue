@@ -7,7 +7,10 @@
 
     <div class="login-form-wrap">
       <div class="login-head">
-        <div class="logo"></div>
+        <div class="logo">
+          <div class="logo-h"></div>
+          <div class="logo-c">登录</div>
+        </div>
       </div>
       <!--
         配置 Form 表单验证：
@@ -183,7 +186,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("./login_bg.jpg") no-repeat;
+  background: url("./login_bg.jpeg") no-repeat;
   background-size: cover;
   .login-form-wrap {
     min-width: 300px;
@@ -192,11 +195,18 @@ export default {
     .login-head {
       display: flex;
       justify-content: center;
-      .logo {
-        width: 200px;
-        height: 57px;
-        background: url("./logo_index.png") no-repeat;
+      padding-bottom: 10px;
+      .logo-h {
+        width: 50px;
+        height: 50px;
+        background: url("https://gw.alipayobjects.com/mdn/prod_resource/afts/img/A*FsnmRIiTfe0AAAAAAAAAAABkARQnAQ") no-repeat;
         background-size: contain;
+        display: flex;
+        justify-content: center
+      }
+      .logo-c{
+        display: flex;
+        justify-content: center;
       }
     }
     .login-form {
