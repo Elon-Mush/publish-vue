@@ -7,7 +7,7 @@ import router from '@/router'
 import { Message } from 'element-ui'
 
 const request = axios.create({
-  baseURL: 'http://api-toutiao-web.itheima.net',
+  baseURL: '/api',
   transformResponse: [function (data) {
     try {
       // 如果转换成功，则直接把结果返回
