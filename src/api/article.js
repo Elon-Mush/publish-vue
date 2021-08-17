@@ -9,7 +9,7 @@ import request from '@/utils/request'
 export const getArticles = params => {
   return request({
     method: 'GET',
-    url: '/mp/v1_0/articles',
+    url: '/app/v1_0/articles',
     params
   })
 }
@@ -20,7 +20,7 @@ export const getArticles = params => {
 export const getArticleChannels = () => {
   return request({
     method: 'GET',
-    url: '/mp/v1_0/channels'
+    url: '/app/v1_0/channels'
   })
 }
 
@@ -30,7 +30,7 @@ export const getArticleChannels = () => {
 export const deleteArticle = articleId => {
   return request({
     method: 'DELETE',
-    url: `/mp/v1_0/articles/${articleId}`
+    url: `/app/v1_0/articles/${articleId}`
   })
 }
 
@@ -40,7 +40,7 @@ export const deleteArticle = articleId => {
 export const addArticle = (data, draft = false) => {
   return request({
     method: 'POST',
-    url: '/mp/v1_0/articles',
+    url: '/app/v1_0/articles',
     params: {
       draft // 是否存为草稿（true 为草稿）
     },
