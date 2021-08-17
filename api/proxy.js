@@ -3,7 +3,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware')
 module.exports = (req, res) => {
   // 创建代理对象并转发请求
   createProxyMiddleware({
-    target: 'http://ttapi.research.itcast.cn/',
+    target: 'http://api-toutiao-web.itheima.net',
     changeOrigin: true,
     pathRewrite: {
       // 通过路径重写，去除请求路径中的 /api
