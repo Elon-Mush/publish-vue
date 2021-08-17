@@ -7,7 +7,7 @@ import request from '@/utils/request'
 export const login = data => {
   return request({
     method: 'POST',
-    url: '/mp/v1_0/authorizations',
+    url: '/app/v1_0/authorizations',
     // data 用来设置 POST 请求体
     data
   })
@@ -19,7 +19,7 @@ export const getUserProfile = () => {
 
   return request({
     method: 'GET',
-    url: '/mp/v1_0/user/profile'
+    url: '/app/v1_0/user/profile'
   })
 }
 
@@ -27,7 +27,7 @@ export const getUserProfile = () => {
 export const updateUserPhoto = data => {
   return request({
     method: 'PATCH',
-    url: '/mp/v1_0/user/photo',
+    url: '/app/v1_0/user/photo',
     data
   })
 }
@@ -36,7 +36,7 @@ export const updateUserPhoto = data => {
 export const updateUserProfile = data => {
   return request({
     method: 'PATCH',
-    url: '/mp/v1_0/user/profile',
+    url: '/app/v1_0/user/profile',
     data
   })
 }
