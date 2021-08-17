@@ -54,7 +54,7 @@ export const addArticle = (data, draft = false) => {
 export const updateArticle = (articleId, data, draft = false) => {
   return request({
     method: 'PUT',
-    url: `/app/v1_0/articles/${articleId}`,
+    url: `/mp/v1_0/articles/${articleId}`,
     params: {
       draft // 是否存为草稿（true 为草稿）
     },
@@ -68,7 +68,7 @@ export const updateArticle = (articleId, data, draft = false) => {
 export const getArticle = articleId => {
   return request({
     method: 'GET',
-    url: `/app/v1_0/articles/${articleId}`
+    url: `/mp/v1_0/articles/${articleId}`
   })
 }
 
